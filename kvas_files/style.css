@@ -47,16 +47,19 @@ h2 {
     justify-content: space-between;
 }
 
-.site-navigation {
+.site-navigation {  
     list-style: none;
-    width: 950px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
 
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.site-navigation .site-navigation-item {
+    margin-right: 100px;
 }
 
 .site-navigation a {
@@ -100,15 +103,22 @@ h2 {
     padding: 0;
     display: flex;
     justify-content: stretch;
+    flex-flow: row wrap;
 }
 
 .product-card {
-    width: 600px;
+    width: 540px;
+    max-width: 540px;
     padding-left: 50px;
+    margin-bottom: 40px;
 
     border-left: 1px solid lightgrey;
     border-right: 1px solid lightgrey;
 }
+
+/* .product-card {
+    flex: 1 1 540px;
+} */
 
 .product-card:nth-child(2) {
     margin-left: -1px;
@@ -177,6 +187,7 @@ td {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
 }
 
 .advantage-list p {
@@ -186,6 +197,8 @@ td {
 .advantage-item {
     padding-left: 100px;
     padding-right: 100px;
+
+    flex: 1 1 150px;
 
     border-right: 1px solid #e5b66c;
 }
@@ -471,12 +484,16 @@ td {
 
 .page-footer .main-nav ul {
     list-style: none;
-    width: 800px;
+    
     margin-right: 350px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: stretch;
     align-items: center;
+}
+
+.page-footer .main-nav ul li {
+    margin-right: 80px;
 }
 
 .page-footer .main-nav ul a {
@@ -489,6 +506,7 @@ td {
 
 .page-footer .footer-logo {
     margin-left: 300px;
+    margin-right: 50px;
 }
 
 .footer-bottom {
@@ -542,6 +560,7 @@ td {
 .page-footer p {
     width: 250px;
     margin-right: 200px;
+    margin-left: 100px;
     
     color: #989898
 }
