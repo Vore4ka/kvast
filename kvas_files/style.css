@@ -282,7 +282,7 @@ td {
 
 /* section 5 */
 
-.assortment table {
+.range table {
     width: 100%;
 
     text-transform: uppercase;
@@ -290,7 +290,7 @@ td {
     font-weight: bold;
 }
 
-.assortment th {
+.range th {
     padding-bottom: 40px;
 
     font-size: 12px;
@@ -299,11 +299,11 @@ td {
     text-align: center;
 }
 
-.assortment tr {
+.range tr {
     border-bottom: 1px solid lightgray;
 }
 
-.assortment td {
+.range td {
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -311,19 +311,19 @@ td {
     text-align: center;
 }
 
-.assortment td:first-child {
+.range td:first-child {
     font-weight: bold;
 }
 
-.assortment td:first-child,
-.assortment th:first-child {
+.range td:first-child,
+.range th:first-child {
     width: 500px;
 
     text-align: left;
 }
 
-.assortment td:last-child,
-.assortment th:last-child {
+.range td:last-child,
+.range th:last-child {
     width: 250px;
 
     text-align: right;
